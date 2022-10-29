@@ -1,0 +1,5 @@
+arrow
+django
+python-decouple
+python-dotenv
+psycopg2
