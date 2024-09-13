@@ -1,0 +1,11 @@
+#!/usr/bin/env sh
+
+psql -U postgres -d starter -c "DROP SCHEMA IF EXISTS public CASCADE;"
+psql -U postgres -d postgres -c "DROP DATABASE starter;"
+psql -U postgres -d postgres -c "DROP ROLE starter;"
+psql -U postgres -d postgres -c "CREATE DATABASE starter;"
+psql -U postgres -d postgres -c "CREATE ROLE starter WITH PASSWORD 'password';"
+psql -U postgres -d postgres -c "ALTER ROLE starter WITH CREATEDB LOGIN;"
+psql -U postgres -d postgres -c "GRANT ALL ON DATABASE starter to starter;"
+psql -U postgres -d starter -c "DROP SCHEMA IF EXISTS public;"
+psql -U postgres -d starter -c "CREATE SCHEMA IF NOT EXISTS public AUTHORIZATION starter;"

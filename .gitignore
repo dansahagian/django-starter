@@ -1,0 +1,14 @@
+__pycache__
+
+# virtualenvs
+.venv
+venv
+
+# environments
+.env
+
+# IDE settings
+.idea
+
+# misc
+.DS_Store
