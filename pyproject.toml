@@ -1,0 +1,23 @@
+[project]
+name = "django-starter"
+version = "0.1.0"
+description = "Boostrap a Django project"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "django-extensions>=3.2.3",
+    "django-htmlmin>=0.11.0",
+    "django>=5.1.1",
+    "gunicorn>=23.0.0",
+    "psycopg[c]>=3.2.1",
+    "python-decouple>=3.8",
+]
+
+[tool.uv]
+dev-dependencies = [
+    "django-debug-toolbar>=4.4.6",
+    "factory-boy>=3.3.1",
+    "ipython>=8.27.0",
+    "pytest-django>=4.9.0",
+    "pytest>=8.3.3",
+]
