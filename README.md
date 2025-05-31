@@ -54,6 +54,5 @@ alias uvm="uv run python manage.py"
 
 Create the virtualenv and install dependencies:
 ```shell
-uv venv
-uv sync
+dev/initialize-env
 ```
