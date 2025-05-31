@@ -39,11 +39,18 @@ exclude = [
     ".ruff_cache",
     "venv",
     ".venv",
-    "project/core/migrations",
+    "pyproject.toml",
 ]
 
 [tool.pyright]
-exclude = ["**/__pycache__", "**/migrations", ".venv/**", "venv/**", ".venv", "venv"]
+exclude = [
+    "**/__pycache__",
+    "**/migrations",
+    ".venv/**",
+    "venv/**",
+    ".venv",
+    "venv",
+]
 ignore = ["**/migrations", ".venv/**"]
 typeCheckingMode = "basic"
 reportMissingImports = "error"
